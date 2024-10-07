@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <!-- CSS links or scripts can go here -->
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<!-- Booking Trip Section -->
+<section id="booking" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2>Book Your Trip</h2>
+            <p>Plan your perfect vacation with us. Fill in your details to book your trip now!</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <select class="form-control" id="destination" required>
+                            <option selected disabled>Select your destination</option>
+                            <option>Telangana</option>
+                            <option>Tamil nadu</option>
+                            <option>Bangalore</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Kerala</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travelDate">Travel Date</label>
+                        <input type="date" class="form-control" id="travelDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="people">Number of People</label>
+                        <input type="number" class="form-control" id="people" placeholder="Enter number of people" required>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                        <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

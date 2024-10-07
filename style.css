@@ -1,0 +1,160 @@
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Black overlay */
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+/* Centered content */
+.carousel-caption {
+    z-index: 2;
+}
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+.about-section {
+    padding: 60px 0;
+}
+.about-section .tabs-content {
+    margin-top: 20px;
+}
+.about-section .nav-tabs .nav-link {
+    font-weight: bold;
+}
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.services-section {
+    padding: 60px 0;
+}
+.service-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+}
+.service-box .icon {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.service-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.service-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.projects-section {
+    padding: 60px 0;
+}
+
+.project-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-tabs {
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.project-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.1);
+}
+
+.project-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.project-item .overlay h5 {
+    font-size: 1.5rem;
+}
+
+/* Adjust the image layout */
+.row .project-item:nth-child(2) {
+    transform: translateY(-20px); /* Middle image slightly elevated */
+}
+
+.row .project-item:nth-child(3) {
+    transform: translateY(20px); /* Last image slightly down */
+}
+/* Custom styles for the footer */
+footer {
+    background-color: #343a40; /* Dark background color */
+}
+footer h5 {
+    color: #ffffff; /* White color for headings */
+}
+footer p, footer a {
+    color: #cccccc; /* Light gray color for text and links */
+}
+footer a:hover {
+    color: #ffffff; /* Change link color on hover */
+}
+footer .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for images */
+}
+
+/*bookings html */
+
+#booking .form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#booking button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
